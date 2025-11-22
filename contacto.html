@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>GameVault</title>
+</head>
+
+<body>
+    <header class="py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.svg" alt="Logo" width="80" height="auto" class="me-2">
+                <h4>GameVault</h4>
+            </a>
+            <form class="d-none d-sm-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center" href="carritoCompra.html">
+                    <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2">
+                </a>
+                <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
+                    <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="d-flex d-sm-none ms-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservaJuegos.html">Reserva de juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <h1 class="text-center">Contacto</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <p><strong>Correo de soporte:</strong> GameVault@gmail.com</p>
+                <p><strong>Número de teléfono:</strong> +34 645 34 36 63</p>
+                <p><strong>Ubicación:</strong> Av. Andalucía 43, Huelva</p>
+                <h3>Formulario de contacto</h3>
+                <form action="">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre"><br>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos"><br>
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" name="correo"><br>
+                </form>
+                
+            </div>
+            <div class="col-lg-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1155.5440635652142!2d-6.935181411999501!3d37.2688581545552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd11cfe3a775cbab%3A0x5674d9aca8c778c6!2sAv.%20de%20Andaluc%C3%ADa%2C%2043%2C%2021005%20Huelva!5e1!3m2!1ses!2ses!4v1763662563289!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer class="mt-auto bg-dark text-white pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Información de la empresa -->
+                <div class="col-md-3 mb-3">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Somos una pagina de videojuegos orientada con los mejores videojuegos del mercado y al mejor
+                        precio.</p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">
+                                <i class="bi bi-house"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html">
+                                <i class="bi bi-envelope"></i> Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="proximoLanzamiento.html">
+                                <i class="bi bi-shield-lock"></i> Proximos lanzamientos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="identificacionUsuario.html">
+                                <i class="bi bi-info-circle"></i> Identificcacion de usuario
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="col-md-3 mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i> Av. Andalucia 43, Huelva</li>
+                        <li><i class="bi bi-telephone-fill"></i> +34 645 34 36 63</li>
+                        <li><i class="bi bi-envelope-fill"></i> GameVault@gmail.com</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-md-3 mb-3">
+                    <h5>Síguenos</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com" class="text-white">
+                                <img src="img/facebook.svg" alt="Logo" width="20" height="auto" class="me-2">
+                            </a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com" class="text-white">
+                                <img src="img/twitter.svg" alt="Logo" width="20" height="auto" class="me-2">
+                            </a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com" class="text-white">
+                                <img src="img/instagram.svg" alt="Logo" width="20" height="auto" class="me-2">
+                            </a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com" class="text-white">
+                                <img src="img/linkedin.svg" alt="Logo" width="20" height="auto" class="me-2">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-light">
+
+            <!-- Derechos de autor -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 GameVault.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
