@@ -1,16 +1,25 @@
 // Cambiar colores
-$info: #000c41;//cambio de color de info
-$warning: #6c5ce7;
-$font-family-base: 'Roboto', sans-serif;        // texto normal
+$info: #000c41; //cambio de color de info
+$warning: #0ebbfe;
+$font-family-base: 'Roboto', sans-serif; // texto normal
 $headings-font-family: 'Oswald', sans-serif;
 
 p {
     font-family: 'Open Sans', sans-serif; // Fuente Open Sans
-  }
+}
+
+.dropdown-menu {
+    .dropdown-item {
+        color: $info; // color lila por defecto
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $info; // color al pasar el mouse
+        }
+    }
+}
 
 // Importar Bootstrap
 @import "../bootstrap-5.3.2/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-
-
-
