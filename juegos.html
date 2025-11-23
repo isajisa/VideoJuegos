@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
     <title>GameVault</title>
 </head>
 
@@ -21,7 +22,9 @@
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
             <div class="d-flex align-items-center">
-                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2">
+                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
+                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
                 <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
                     <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
                 </a>
@@ -31,16 +34,17 @@
 
     <nav class="navbar navbar-expand-sm bg-body-tertiary">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <form class="d-flex d-sm-none ms-2" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            <div class="d-flex d-sm-none align-items-center w-100">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -48,7 +52,19 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="juegos.html">Juegos</a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle px-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Juegos</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#pc">PC</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#nintendo">Nintendo</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#play">PlayStation</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#comparativa">Comparativa de juegos</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="proximoLanzamiento.html">Proximos lanzamientos</a>
@@ -85,11 +101,9 @@
                     </li>
                     <li class="nav-item col-ms-4 col-md-3 col-lg-3">
                         <a class="nav-link d-flex align-items-center justify-content-center" href="#play">
-                            <img src="img/playStation.svg" alt="Logo PlayStation" width="25" class="me-2">
-                            PlayStation
+                            <img src="img/playStation.svg" alt="Logo PlayStation" width="25" class="me-2"> PlayStation
                         </a>
                     </li>
-
                 </ul>
             </div>
         </nav>
@@ -108,8 +122,12 @@
                             <h6 class="text-danger mb-0">17,19€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -124,8 +142,12 @@
                             <h6 class="text-danger mb-0">44,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -140,8 +162,12 @@
                             <h6 class="text-danger mb-0">8,89€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -155,8 +181,12 @@
                             <h6 class="text-danger mb-0">11,89€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -171,8 +201,12 @@
                             <h6 class="text-danger mb-0">15,49€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -187,8 +221,12 @@
                             <h6 class="text-danger mb-0">15,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -202,15 +240,19 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares1.png" class="card-img-top">
+                    <img src="img/nintendo1.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Battlefield 6</h6>
-                            <h6 class="text-danger mb-0">52,91€</h6>
+                            <h6 class="card-title mb-0">Leyendas Pokémon</h6>
+                            <h6 class="text-danger mb-0">23,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -218,15 +260,19 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares2.png" class="card-img-top">
+                    <img src="img/nintendo2.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Jurassic World Evolution 3</h6>
-                            <h6 class="text-danger mb-0">52,99€</h6>
+                            <h6 class="card-title mb-0">Super Mario Galaxy + Super Mario Galaxy 2</h6>
+                            <h6 class="text-danger mb-0">63,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -234,15 +280,19 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares3.png" class="card-img-top">
+                    <img src="img/nintendo3.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Football Manager 26</h6>
-                            <h6 class="text-danger mb-0">35,99€</h6>
+                            <h6 class="card-title mb-0">Animal Crossing</h6>
+                            <h6 class="text-danger mb-0">18,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -250,15 +300,19 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares4.png" class="card-img-top">
+                    <img src="img/nintendo4.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Sacred 2 Remaster</h6>
-                            <h6 class="text-danger mb-0">13,49€</h6>
+                            <h6 class="card-title mb-0">Kirby Air Riders</h6>
+                            <h6 class="text-danger mb-0">64,49€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -266,15 +320,19 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares5.png" class="card-img-top">
+                    <img src="img/nintendo5.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Digimon Story Time Stranger</h6>
-                            <h6 class="text-danger mb-0">49,89€</h6>
+                            <h6 class="card-title mb-0">Red Dead Redemption</h6>
+                            <h6 class="text-danger mb-0">19,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -282,15 +340,19 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares6.png" class="card-img-top">
+                    <img src="img/nintendo6.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Wall World 2</h6>
-                            <h6 class="text-danger mb-0">8,89€</h6>
+                            <h6 class="card-title mb-0">Just Dance 2026 Edition</h6>
+                            <h6 class="text-danger mb-0">23,76€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -303,90 +365,114 @@
         <div class="row g-4 mb-4">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares1.png" class="card-img-top">
+                    <img src="img/xbox1.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Battlefield 6</h6>
-                            <h6 class="text-danger mb-0">52,91€</h6>
+                            <h6 class="card-title mb-0">Call of Duty: Black Ops 7</h6>
+                            <h6 class="text-danger mb-0">55,49€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares2.png" class="card-img-top">
+                    <img src="img/xbox2.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Jurassic World Evolution 3</h6>
+                            <h6 class="card-title mb-0">WWE 2K25</h6>
+                            <h6 class="text-danger mb-0">21,43€</h6>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg rounded-4">
+                    <img src="img/xbox3.png" class="card-img-top">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="card-title mb-0">INAZUMA ELEVEN</h6>
                             <h6 class="text-danger mb-0">52,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares3.png" class="card-img-top">
+                    <img src="img/xbox4.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Football Manager 26</h6>
-                            <h6 class="text-danger mb-0">35,99€</h6>
+                            <h6 class="card-title mb-0">Microsoft Flight Simulator 2024</h6>
+                            <h6 class="text-danger mb-0">74,56€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares4.png" class="card-img-top">
+                    <img src="img/xbox5.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Sacred 2 Remaster</h6>
-                            <h6 class="text-danger mb-0">13,49€</h6>
+                            <h6 class="card-title mb-0">Sekiro: Shadows Die Twice</h6>
+                            <h6 class="text-danger mb-0">11,02€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares5.png" class="card-img-top">
+                    <img src="img/xbox6.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Digimon Story Time Stranger</h6>
-                            <h6 class="text-danger mb-0">49,89€</h6>
+                            <h6 class="card-title mb-0">Forza Horizon 5</h6>
+                            <h6 class="text-danger mb-0">31,49€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4">
-                    <img src="img/populares6.png" class="card-img-top">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Wall World 2</h6>
-                            <h6 class="text-danger mb-0">8,89€</h6>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -398,95 +484,305 @@
         <div class="row g-4 mb-4">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares1.png" class="card-img-top">
+                    <img src="img/playStation1.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Battlefield 6</h6>
-                            <h6 class="text-danger mb-0">52,91€</h6>
+                            <h6 class="card-title mb-0">Marvel's Spider-Man 2</h6>
+                            <h6 class="text-danger mb-0">65,90€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares2.png" class="card-img-top">
+                    <img src="img/playStation2.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Jurassic World Evolution 3</h6>
-                            <h6 class="text-danger mb-0">52,99€</h6>
+                            <h6 class="card-title mb-0">Elden Ring - Shadow of the Erdtree</h6>
+                            <h6 class="text-danger mb-0">28,99€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares3.png" class="card-img-top">
+                    <img src="img/playStation3.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Football Manager 26</h6>
-                            <h6 class="text-danger mb-0">35,99€</h6>
+                            <h6 class="card-title mb-0">Cyberpunk 2077</h6>
+                            <h6 class="text-danger mb-0">20,59€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares4.png" class="card-img-top">
+                    <img src="img/playStation4.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Sacred 2 Remaster</h6>
-                            <h6 class="text-danger mb-0">13,49€</h6>
+                            <h6 class="card-title mb-0">Mortal Kombat 11 Ultimate</h6>
+                            <h6 class="text-danger mb-0">21,90€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares5.png" class="card-img-top">
+                    <img src="img/playStation5.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Digimon Story Time Stranger</h6>
-                            <h6 class="text-danger mb-0">49,89€</h6>
+                            <h6 class="card-title mb-0">Horizon Call of the Mountain</h6>
+                            <h6 class="text-danger mb-0">41,25€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/populares6.png" class="card-img-top">
+                    <img src="img/playStation6.png" class="card-img-top">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="card-title mb-0">Wall World 2</h6>
-                            <h6 class="text-danger mb-0">8,89€</h6>
+                            <h6 class="card-title mb-0">Assassin's Creed Valhalla</h6>
+                            <h6 class="text-danger mb-0">7,53€</h6>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-secondary flex-fill">Añadir al carrito</button>
-                            <a href="pago.html"><button type="button" class="btn btn-secondary flex-fill">Comprar</button></a>
+                            <button type="button" class="btn btn-secondary flex-fill" data-bs-toggle="popover"
+                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <a href="pago.html"><button type="button"
+                                    class="btn btn-secondary flex-fill">Comprar</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <h2 class="text-center" id="comparativa">Comparativa de Juegos</h2>
+        <div class="table-responsive mb-5">
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Juego</th>
+                        <th>Plataforma</th>
+                        <th>Tipo de Key</th>
+                        <th>Entrega</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Assetto Corsa Rally</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>17,19€</td>
+                    </tr>
+                    <tr>
+                        <td>Anno 117: Pax Romana</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>44,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Morsels</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>8,89€</td>
+                    </tr>
+                    <tr>
+                        <td>BALL x PIT</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>11,89€</td>
+                    </tr>
+                    <tr>
+                        <td>Minecraft</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>15,49€</td>
+                    </tr>
+                    <tr>
+                        <td>Moonlighter 2</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>15,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Leyendas Pokémon</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>23,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario Galaxy + Super Mario Galaxy 2</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>63,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Animal Crossing</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>18,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Kirby Air Riders</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>64,49€</td>
+                    </tr>
+                    <tr>
+                        <td>Red Dead Redemption</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>19,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Just Dance 2026 Edition</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>23,76€</td>
+                    </tr>
+                    <tr>
+                        <td>Call of Duty: Black Ops 7</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>55,49€</td>
+                    </tr>
+                    <tr>
+                        <td>WWE 2K25</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>21,43€</td>
+                    </tr>
+                    <tr>
+                        <td>INAZUMA ELEVEN</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>52,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Flight Simulator 2024</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>74,56€</td>
+                    </tr>
+                    <tr>
+                        <td>Sekiro: Shadows Die Twice</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>11,02€</td>
+                    </tr>
+                    <tr>
+                        <td>Forza Horizon 5</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>31,49€</td>
+                    </tr>
+                    <tr>
+                        <td>Marvel's Spider-Man 2</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>65,90€</td>
+                    </tr>
+                    <tr>
+                        <td>Elden Ring - Shadow of the Erdtree</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>28,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Cyberpunk 2077</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>20,59€</td>
+                    </tr>
+                    <tr>
+                        <td>Mortal Kombat 11 Ultimate</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>21,90€</td>
+                    </tr>
+                    <tr>
+                        <td>Horizon Call of the Mountain</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>41,25€</td>
+                    </tr>
+                    <tr>
+                        <td>Assassin's Creed Valhalla</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>7,53€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </main>
     <br>
     <footer class="mt-auto bg-dark text-white pt-4 pb-4">

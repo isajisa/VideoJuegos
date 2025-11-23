@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
     <title>GameVault</title>
 </head>
 
@@ -21,7 +22,9 @@
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
             <div class="d-flex align-items-center">
-                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2">
+                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
+                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
                 <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
                     <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
                 </a>
@@ -31,16 +34,17 @@
 
     <nav class="navbar navbar-expand-sm bg-body-tertiary">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <form class="d-flex d-sm-none ms-2" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            <div class="d-flex d-sm-none align-items-center w-100">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -48,7 +52,19 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="juegos.html">Juegos</a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle px-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Juegos</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#pc">PC</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#nintendo">Nintendo</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#play">PlayStation</a></li>
+                                <li><a class="dropdown-item" href="juegos.html#comparativa">Comparativa de juegos</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="proximoLanzamiento.html">Proximos lanzamientos</a>
@@ -72,23 +88,38 @@
                         <div class="d-flex justify-content-center gap-3">
 
                             <!-- Botón Facebook -->
-                            <button
-                                class="btn bg-primary d-flex justify-content-center align-items-center rounded-3 p-3">
+                            <button type="button"
+                                class="btn bg-primary d-flex justify-content-center align-items-center rounded-3 p-3 border border-dark"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
                                 <img src="img/facebook.svg" width="30" alt="Facebook">
                             </button>
 
                             <!-- Botón Google -->
-                            <button class="btn bg-white d-flex justify-content-center align-items-center rounded-3 p-3">
+                            <button type="button"
+                                class="btn bg-white d-flex justify-content-center align-items-center rounded-3 p-3 border border-dark"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
                                 <img src="img/google.svg" width="30" alt="Google">
                             </button>
 
                             <!-- Botón Apple -->
-                            <button class="btn bg-dark d-flex justify-content-center align-items-center rounded-3 p-3">
+                            <button type="button"
+                                class="btn bg-dark d-flex justify-content-center align-items-center rounded-3 p-3 border border-dark"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
                                 <img src="img/apple.svg" width="30" alt="Apple">
                             </button>
 
                             <!-- Botón Discord -->
-                            <button class="btn bg-info d-flex justify-content-center align-items-center rounded-3 p-3">
+                            <button type="button"
+                                class="btn bg-info d-flex justify-content-center align-items-center rounded-3 p-3 border border-dark"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
                                 <img src="img/discord.svg" width="30" alt="Discord">
                             </button>
                         </div>
@@ -102,7 +133,10 @@
                             <input type="password" placeholder="Contraseña" class="form-control" id="Contraseña">
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="popover"
+                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Iniciar
+                            sesión</button>
                     </form>
                 </div>
             </div>
