@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="py-2 bg-dark text-white ">
+    <header class="py-2 bg-dark text-white">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="img/logo.svg" alt="Logo" width="100" height="auto" class="me-2">
@@ -19,7 +19,8 @@
             </a>
             <form class="d-none d-sm-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-warning" type="submit">Buscar</button>
+                <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
             </form>
             <div class="d-flex align-items-center">
                 <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
@@ -42,7 +43,8 @@
                 </button>
                 <form class="d-flex flex-grow-1" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                    <button class="btn btn-warning" type="submit">Buscar</button>
+                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
                 </form>
             </div>
 
@@ -51,23 +53,24 @@
                     <li class="nav-item">
                         <a class="nav-link text-info" aria-current="page" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle px-0 text-info" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Juegos</button>
+                            <button class="btn dropdown-toggle active px-0 text-info" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><b>Juegos</b></button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
-                                <li><a class="dropdown-item" href="juegos.html#pc">PC</a></li>
-                                <li><a class="dropdown-item" href="juegos.html#nintendo">Nintendo</a></li>
-                                <li><a class="dropdown-item" href="juegos.html#xbox">Xbox</a></li>
-                                <li><a class="dropdown-item" href="juegos.html#play">PlayStation</a></li>
-                                <li><a class="dropdown-item" href="juegos.html#comparativa">Comparativa de juegos</a>
-                                </li>
+                                <li><a class="dropdown-item text-info" href="juegos.html">Juegos</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#pc">PC</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="comparativa.html">Comparativa de Juegos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
@@ -597,194 +600,8 @@
                 </div>
             </div>
         </div>
-
-        <h2 class="text-center" id="comparativa">Comparativa de Juegos</h2>
-        <div class="table-responsive mb-5">
-            <table class="table table-striped table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Juego</th>
-                        <th>Plataforma</th>
-                        <th>Tipo de Key</th>
-                        <th>Entrega</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Assetto Corsa Rally</td>
-                        <td>PC</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>17,19€</td>
-                    </tr>
-                    <tr>
-                        <td>Anno 117: Pax Romana</td>
-                        <td>PC</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>44,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Morsels</td>
-                        <td>PC</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>8,89€</td>
-                    </tr>
-                    <tr>
-                        <td>BALL x PIT</td>
-                        <td>PC</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>11,89€</td>
-                    </tr>
-                    <tr>
-                        <td>Minecraft</td>
-                        <td>PC</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>15,49€</td>
-                    </tr>
-                    <tr>
-                        <td>Moonlighter 2</td>
-                        <td>PC</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>15,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Leyendas Pokémon</td>
-                        <td>Nintendo</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>23,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Super Mario Galaxy + Super Mario Galaxy 2</td>
-                        <td>Nintendo</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>63,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Animal Crossing</td>
-                        <td>Nintendo</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>18,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Kirby Air Riders</td>
-                        <td>Nintendo</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>64,49€</td>
-                    </tr>
-                    <tr>
-                        <td>Red Dead Redemption</td>
-                        <td>Nintendo</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>19,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Just Dance 2026 Edition</td>
-                        <td>Nintendo</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>23,76€</td>
-                    </tr>
-                    <tr>
-                        <td>Call of Duty: Black Ops 7</td>
-                        <td>Xbox</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>55,49€</td>
-                    </tr>
-                    <tr>
-                        <td>WWE 2K25</td>
-                        <td>Xbox</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>21,43€</td>
-                    </tr>
-                    <tr>
-                        <td>INAZUMA ELEVEN</td>
-                        <td>Xbox</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>52,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Microsoft Flight Simulator 2024</td>
-                        <td>Xbox</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>74,56€</td>
-                    </tr>
-                    <tr>
-                        <td>Sekiro: Shadows Die Twice</td>
-                        <td>Xbox</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>11,02€</td>
-                    </tr>
-                    <tr>
-                        <td>Forza Horizon 5</td>
-                        <td>Xbox</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>31,49€</td>
-                    </tr>
-                    <tr>
-                        <td>Marvel's Spider-Man 2</td>
-                        <td>PlayStation</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>65,90€</td>
-                    </tr>
-                    <tr>
-                        <td>Elden Ring - Shadow of the Erdtree</td>
-                        <td>PlayStation</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>28,99€</td>
-                    </tr>
-                    <tr>
-                        <td>Cyberpunk 2077</td>
-                        <td>PlayStation</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>20,59€</td>
-                    </tr>
-                    <tr>
-                        <td>Mortal Kombat 11 Ultimate</td>
-                        <td>PlayStation</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>21,90€</td>
-                    </tr>
-                    <tr>
-                        <td>Horizon Call of the Mountain</td>
-                        <td>PlayStation</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>41,25€</td>
-                    </tr>
-                    <tr>
-                        <td>Assassin's Creed Valhalla</td>
-                        <td>PlayStation</td>
-                        <td>Digital</td>
-                        <td>Instantánea</td>
-                        <td>7,53€</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
     </main>
-    <br>
+    
     <footer class="mt-auto bg-dark text-white pt-4 pb-4">
         <div class="container">
             <div class="row">

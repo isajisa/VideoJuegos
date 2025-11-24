@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/custom.css">
+    <script src="bootstrap-5.3.2/dist/js/bootstrap.bundle.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>GameVault</title>
+</head>
+
+<body>
+    <header class="py-2 bg-dark text-white">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.svg" alt="Logo" width="100" height="auto" class="me-2">
+                <h4>GameVault</h4>
+            </a>
+            <form class="d-none d-sm-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+            </form>
+            <div class="d-flex align-items-center">
+                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
+                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
+                <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
+                    <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-secondary">
+        <div class="container-fluid">
+            <div class="d-flex d-sm-none align-items-center w-100">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                </form>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle px-0 text-info" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Juegos</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-info" href="juegos.html">Juegos</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#pc">PC</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-info" href="comparativa.html"><b>Comparativa de Juegos</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid my-4">
+        <h2 class="text-center" id="comparativa">Comparativa de Juegos</h2>
+        <div class="table-responsive mb-5">
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Juego</th>
+                        <th>Género</th>
+                        <th>Plataforma</th>
+                        <th>Tipo de Key</th>
+                        <th>Entrega</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Assetto Corsa Rally</td>
+                        <td>Carreras</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>17,19€</td>
+                    </tr>
+                    <tr>
+                        <td>Anno 117: Pax Romana</td>
+                        <td>Simuladores, Estrategia</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>44,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Morsels</td>
+                        <td>Acción, Indie</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>8,89€</td>
+                    </tr>
+                    <tr>
+                        <td>BALL x PIT</td>
+                        <td>Acción, Indie</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>11,89€</td>
+                    </tr>
+                    <tr>
+                        <td>Minecraft</td>
+                        <td>Acción, Aventura, Rol</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>15,49€</td>
+                    </tr>
+                    <tr>
+                        <td>Moonlighter 2</td>
+                        <td>Acción, Aventura, Rol, Acceso anticipado</td>
+                        <td>PC</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>15,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Leyendas Pokémon</td>
+                        <td>Acción, Aventura, RPG</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>23,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario Galaxy + Super Mario Galaxy 2</td>
+                        <td>Acción, Aventura</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>63,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Animal Crossing</td>
+                        <td>Simulación</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>18,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Kirby Air Riders</td>
+                        <td>Aventura</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>64,49€</td>
+                    </tr>
+                    <tr>
+                        <td>Red Dead Redemption</td>
+                        <td>Acción</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>19,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Just Dance 2026 Edition</td>
+                        <td>Ritmo</td>
+                        <td>Nintendo</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>23,76€</td>
+                    </tr>
+                    <tr>
+                        <td>Call of Duty: Black Ops 7</td>
+                        <td>Acción</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>55,49€</td>
+                    </tr>
+                    <tr>
+                        <td>WWE 2K25</td>
+                        <td>Simulación, Deporte</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>21,43€</td>
+                    </tr>
+                    <tr>
+                        <td>INAZUMA ELEVEN</td>
+                        <td>RPG, Deporte</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>52,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Flight Simulator 2024</td>
+                        <td>Simulación</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>74,56€</td>
+                    </tr>
+                    <tr>
+                        <td>Sekiro: Shadows Die Twice</td>
+                        <td>Acción, Aventura</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>11,02€</td>
+                    </tr>
+                    <tr>
+                        <td>Forza Horizon 5</td>
+                        <td>Carreras, Acción, Aventura, Simulación, Deporte</td>
+                        <td>Xbox</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>31,49€</td>
+                    </tr>
+                    <tr>
+                        <td>Marvel's Spider-Man 2</td>
+                        <td>Acción, Aventura</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>65,90€</td>
+                    </tr>
+                    <tr>
+                        <td>Elden Ring - Shadow of the Erdtree</td>
+                        <td>Acción, RPG</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>28,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Cyberpunk 2077</td>
+                        <td>RPG</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>20,59€</td>
+                    </tr>
+                    <tr>
+                        <td>Mortal Kombat 11 Ultimate</td>
+                        <td>Acción</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>21,90€</td>
+                    </tr>
+                    <tr>
+                        <td>Horizon Call of the Mountain</td>
+                        <td>Acción, Entrenamiento, RPG</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>41,25€</td>
+                    </tr>
+                    <tr>
+                        <td>Assassin's Creed Valhalla</td>
+                        <td>Acción, Aventura</td>
+                        <td>PlayStation</td>
+                        <td>Digital</td>
+                        <td>Instantánea</td>
+                        <td>7,53€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+<br>
+<br>
+    <footer class="mt-auto bg-dark text-white pt-4 pb-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <!-- Información de la empresa -->
+                <div class="col-md-3 mb-3">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Somos una pagina de videojuegos orientada con los mejores videojuegos del mercado y al mejor
+                        precio.</p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="juegos.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="reservaJuegos.html">Reserva de juegos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="col-md-3 mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i> Av. Andalucia 43, Huelva</li>
+                        <li><i class="bi bi-telephone-fill"></i> +34 645 34 36 63</li>
+                        <li><i class="bi bi-envelope-fill"></i> GameVault@gmail.com</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-md-3 mb-3">
+                    <h5>Síguenos</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com" class="text-white">
+                                <img src="img/facebook.svg" alt="Logo facebook" width="20" height="auto" class="me-2">
+                            </a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com" class="text-white">
+                                <img src="img/twitter.svg" alt="Logo twitter" width="20" height="auto" class="me-2">
+                            </a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com" class="text-white">
+                                <img src="img/instagram.svg" alt="Logo instagram" width="20" height="auto" class="me-2">
+                            </a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com" class="text-white">
+                                <img src="img/linkedin.svg" alt="Logo linkedin" width="20" height="auto" class="me-2">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-light">
+
+            <!-- Derechos de autor -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 GameVault.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
