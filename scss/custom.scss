@@ -5,10 +5,6 @@ $font-family-base: 'Roboto', sans-serif; // texto normal
 $headings-font-family: 'Oswald', sans-serif;
 $table-striped-bg: rgba($warning, .25);
 
-p {
-    font-family: 'Open Sans', sans-serif; // Fuente Open Sans
-}
-
 .dropdown-menu {
     .dropdown-item {
         color: $info; // color lila por defecto
