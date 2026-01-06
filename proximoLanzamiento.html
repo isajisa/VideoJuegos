@@ -73,6 +73,11 @@
                         <a class="nav-link text-info" href="comparativa.html">Comparativa de Juegos</a>
                     </li>
                     <li class="nav-item">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Video tutorial
+                        </button>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
                     </li>
                     <li class="nav-item">
@@ -83,12 +88,32 @@
         </div>
     </nav>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video id="tutorialVideo" controls width="100%">
+                        <source src="video_tutorial/Video_tutorial.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class="container-fluid my-4">
         <h1 class="text-center">Proximos lanzamientos</h1>
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/proximoLanzamiento1.png" class="card-img-top" alt="...">
+                    <img src="img/proximoLanzamiento1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title">MARVEL Cosmic Invasion</h5>
@@ -103,7 +128,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/proximoLanzamiento3.png" class="card-img-top" alt="...">
+                    <img src="img/proximoLanzamiento2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title">SLEEP AWAKE</h5>
@@ -118,7 +143,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/proximoLanzamiento2.png" class="card-img-top" alt="...">
+                    <img src="img/proximoLanzamiento3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title">LET IT DIE: INFERNO</h5>
@@ -133,7 +158,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/proximoLanzamiento4.png" class="card-img-top" alt="...">
+                    <img src="img/proximoLanzamiento4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title">The Last Caretaker</h5>
@@ -148,7 +173,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/proximoLanzamiento5.png" class="card-img-top" alt="...">
+                    <img src="img/proximoLanzamiento5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title">Reentry - A Space Flight Simulator</h5>
@@ -163,7 +188,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-4">
-                    <img src="img/proximoLanzamiento6.png" class="card-img-top" alt="...">
+                    <img src="img/proximoLanzamiento6.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title">Thief VR: Legacy of shadow</h5>

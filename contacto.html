@@ -73,6 +73,11 @@
                         <a class="nav-link text-info" href="comparativa.html">Comparativa de Juegos</a>
                     </li>
                     <li class="nav-item">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Video tutorial
+                        </button>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
                     </li>
                     <li class="nav-item">
@@ -82,6 +87,26 @@
             </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video id="tutorialVideo" controls width="100%">
+                        <source src="video_tutorial/Video_tutorial.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main class="container my-4">
         <div class="row">

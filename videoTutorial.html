@@ -19,8 +19,9 @@
             </a>
             <form class="d-none d-sm-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-placement="bottom" title="No disponible"
+                    data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
             </form>
             <div class="d-flex align-items-center">
                 <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
@@ -43,15 +44,16 @@
                 </button>
                 <form class="d-flex flex-grow-1" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-placement="bottom" title="No disponible"
+                        data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
                 </form>
             </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-info" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active text-info" aria-current="page" href="index.html"><b>Inicio</b></a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
@@ -78,7 +80,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-info" href="reservaJuegos.html"><b>Reserva de juegos</b></a>
+                        <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-info" href="contacto.html">Contacto</a>
@@ -87,19 +89,18 @@
             </div>
         </div>
     </nav>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las distintas plataformas</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <video id="tutorialVideo" controls width="100%">
-                        <source src="video_tutorial/Video_tutorial.mp4" type="video/mp4">
+                    <video id="tutorialVideo" width="100%">
+                        <source src="../../../../DAW diseño 2/tema3/Tarea1/video/Tutorial_GitHub_pages.mp4" type="video/mp4">
                         Tu navegador no soporta video HTML5.
-                    </video>
+                      </video>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
@@ -107,162 +108,12 @@
             </div>
         </div>
     </div>
+    <main class="container-fluid my-4">
+        
 
-    <main class="container my-4">
-        <h2 class="text-center mb-4">Reserva de juegos</h2>
-    
-        <form action="pago.html" method="post">
-    
-            <!-- DATOS DEL USUARIO -->
-            <fieldset class="border p-3 mb-4">
-                <legend class="w-auto px-2">Datos del usuario</legend>
-    
-                <div class="row g-3">
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control" required>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="apellidos" class="form-label">Apellidos:</label>
-                        <input type="text" id="apellidos" name="apellidos" class="form-control" required>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="correo" class="form-label">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" class="form-control" required>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="telefono" class="form-label">Teléfono:</label>
-                        <input type="text" id="telefono" name="telefono" class="form-control" pattern="[0-9]{9}" maxlength="9" required title="Debe contener 9 números">
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="dni" class="form-label">DNI:</label>
-                        <input type="text" id="dni" name="dni" class="form-control">
-                    </div>
-    
-                </div>
-            </fieldset>
-    
-            <!-- DATOS DE LA KEY -->
-            <fieldset class="border p-3 mb-4">
-                <legend class="w-auto px-2">Datos de la Key</legend>
-    
-                <div class="row g-3">
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="nombreJuego" class="form-label">Nombre del juego:</label>
-                        <input type="text" id="nombreJuego" name="nombreJuego" class="form-control" required>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="plataforma" class="form-label">Plataforma:</label>
-                        <select id="plataforma" name="plataforma" class="form-select" required>
-                            <option value="">Seleccione...</option>
-                            <option>PC</option>
-                            <option>Xbox</option>
-                            <option>PlayStation</option>
-                            <option>Nintendo</option>
-                        </select>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="region" class="form-label">Región:</label>
-                        <select id="region" name="region" class="form-select" required>
-                            <option value="">Seleccione...</option>
-                            <option>GLOBAL</option>
-                            <option>EU</option>
-                            <option>US</option>
-                            <option>LATAM</option>
-                            <option>ASIA</option>
-                        </select>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="cantidad" class="form-label">Cantidad:</label>
-                        <input type="number" id="cantidad" name="cantidad" class="form-control" value="1" min="1" required>
-                    </div>
-    
-                </div>
-            </fieldset>
-    
-            <!-- ENTREGA -->
-            <fieldset class="border p-3 mb-4">
-                <legend class="w-auto px-2">Método de entrega</legend>
-    
-                <div class="row g-3">
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="correoEntrega" class="form-label">Correo donde enviar la key:</label>
-                        <input type="email" id="correoEntrega" name="correoEntrega" class="form-control" required>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-4">
-                        <label for="codigoPromocional" class="form-label">Código promocional (opcional):</label>
-                        <input type="text" id="codigoPromocional" name="codigoPromocional" class="form-control">
-                    </div>
-    
-                </div>
-            </fieldset>
-    
-            <!-- MÉTODO DE PAGO -->
-            <fieldset class="border p-3 mb-4">
-                <legend class="w-auto px-2">Método de pago</legend>
-    
-                <div class="row g-3">
-    
-                    <div class="col-md-6 col-lg-4">
-    
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="pagoTarjeta" name="metodoPago" value="tarjeta" required>
-                            <label class="form-check-label" for="pagoTarjeta">
-                                Tarjeta de crédito / débito
-                            </label>
-                        </div>
-    
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="pagoPaypal" name="metodoPago" value="paypal" required>
-                            <label class="form-check-label" for="pagoPaypal">
-                                PayPal
-                            </label>
-                        </div>
-    
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="pagoTransferencia" name="metodoPago" value="transferencia" required>
-                            <label class="form-check-label" for="pagoTransferencia">
-                                Transferencia bancaria
-                            </label>
-                        </div>
-    
-                    </div>
-    
-                </div>
-            </fieldset>
-    
-            <!-- TÉRMINOS Y CONDICIONES -->
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="terminos" name="acepta_terminos" required>
-                <label class="form-check-label" for="terminos">
-                    Acepto los Términos y Condiciones
-                </label>
-            </div>
-    
-            <!-- BOTONES -->
-            <div class="row text-center">
-                <div class="col-6">
-                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                </div>
-                <div class="col-6">
-                    <button type="reset" class="btn btn-warning w-100">Limpiar</button>
-                </div>
-            </div>
-    
-        </form>
+        
     </main>
-    
+
     <footer class="mt-auto bg-dark text-white pt-4 pb-4">
         <div class="container">
             <div class="row">
@@ -299,9 +150,9 @@
                 <div class="col-md-3 mb-3">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-geo-alt-fill"></i> Av. Andalucia 43, Huelva</li>
-                        <li><i class="bi bi-telephone-fill"></i> +34 645 34 36 63</li>
-                        <li><i class="bi bi-envelope-fill"></i> GameVault@gmail.com</li>
+                        <li> Av. Andalucia 43, Huelva</li>
+                        <li> +34 645 34 36 63</li>
+                        <li> GameVault@gmail.com</li>
                     </ul>
                 </div>
 
