@@ -13,49 +13,42 @@
 
 <body class="bg-info">
     <header class="py-2 bg-info text-white">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <!-- Logo -->
-                <div class="col-4 col-md-3 d-flex align-items-center">
-                    <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
-                        <img src="img/logo.svg" alt="Logo" width="100" class="me-2">
-                        <h1 class="m-0">GameVault</h1>
-                    </a>
-                </div>
-
-                <!-- Buscador -->
-                <div class="col-4 col-md-6 d-none d-sm-flex justify-content-center">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                        <button class="btn btn-warning" type="button" data-bs-toggle="popover"
-                            data-bs-trigger="hover focus" data-bs-placement="bottom" title="No disponible"
-                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
-                    </form>
-                </div>
-
-                <!-- Iconos derecha -->
-                <div class="col-4 col-md-3 d-flex justify-content-end align-items-center">
-                    <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" class="me-2"
-                        data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                        title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
-                    <a class="navbar-brand d-flex align-items-center m-0" href="identificacionUsuario.html">
-                        <img src="img/user.svg" alt="Logo" width="30">
-                    </a>
-                </div>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.svg" alt="Logo" width="100" height="auto">
+                <h1>GameVault</h1>
+            </a>
+            <div class="d-none d-lg-flex justify-content-center flex-grow-1 mx-4">
+                <form class="d-flex w-100" style="max-width: 550px;">
+                    <input class="form-control me-2 fs-5 px-4 py-3" type="search" placeholder="🔍 Buscar juegos..."
+                        aria-label="Search" style="border-radius: 30px 0 0 30px;">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-placement="bottom" title="No disponible"
+                        data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                    </button>
+                </form>
+            </div>
+            <div class="d-flex align-items-center">
+                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
+                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
+                <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
+                    <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
+                </a>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm bg-warning">
+    <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-            <div class="d-flex d-sm-none align-items-center w-100">
+            <div class="d-flex d-lg-none align-items-center w-100">
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <form class="d-flex flex-grow-1" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <input class="form-control me-2 fs-5 px-4 py-3" type="search" placeholder="🔍 Buscar juegos..." aria-label="Search"  style="border-radius: 30px 0 0 30px;">
                     <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
                         data-bs-placement="bottom" title="No disponible"
                         data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
@@ -136,7 +129,7 @@
 
             <div class="container h-100 position-relative d-flex align-items-center justify-content-end">
                 <div class="text-white text-center">
-                    <h1>Los mejores juegos al mejor precio</h1>
+                    <h1 class="tituloVideo">Los mejores juegos al mejor precio</h1>
                     <p class="fs-5">Keys digitales · Entrega inmediata · 100% seguro</p>
                 </div>
             </div>
@@ -182,117 +175,182 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
                     <div style="position: relative;">
-                    <img src="img/populares2.jpg" class="rounded-3 card-img-top">
-                    <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                        style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                        <img src="img/populares2.jpg" class="rounded-3 card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                  2 5.42 4.42 3 7.5 3
                  c1.74 0 3.41 0.81 4.5 2.09
                  C13.09 3.81 14.76 3 16.5 3
                  19.58 3 22 5.42 22 8.5
                  c0 3.78-3.4 6.86-8.55 11.54
                  L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
-                    </svg>
-                </div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h5 class="card-title mb-0">Jurassic World Evolution 3</h5>
-                        <h5 class="text-danger mb-0">52,99€</h5>
+                        </svg>
                     </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
-                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                            carrito</button>
-                        <button type="button" class="btn-transition btn btn-warning flex-fill"
-                            onclick="window.location.href='pago.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                <img src="img/populares3.jpg" class="rounded-3 card-img-top">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h5 class="card-title mb-0">Football Manager 26</h5>
-                        <h5 class="text-danger mb-0">35,99€</h5>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
-                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                            carrito</button>
-                        <button type="button" class="btn-transition btn btn-warning flex-fill"
-                            onclick="window.location.href='pago.html'">Comprar</button>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Jurassic World Evolution 3</h5>
+                            <h5 class="text-danger mb-0">52,99€</h5>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                <img src="img/populares4.jpg" class="rounded-3 card-img-top">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h5 class="card-title mb-0">Sacred 2 Remaster</h5>
-                        <h5 class="text-danger mb-0">13,49€</h5>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                    <div style="position: relative;">
+                        <img src="img/populares3.jpg" class="rounded-3 card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
                     </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
-                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                            carrito</button>
-                        <button type="button" class="btn-transition btn btn-warning flex-fill"
-                            onclick="window.location.href='pago.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                <img src="img/populares5.jpg" class="rounded-3 card-img-top">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h5 class="card-title mb-0">Digimon Story Time Stranger</h5>
-                        <h5 class="text-danger mb-0">49,89€</h5>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
-                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                            carrito</button>
-                        <button type="button" class="btn-transition btn btn-warning flex-fill"
-                            onclick="window.location.href='pago.html'">Comprar</button>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Football Manager 26</h5>
+                            <h5 class="text-danger mb-0">35,99€</h5>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                <img src="img/populares6.jpg" class="rounded-3 card-img-top">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h5 class="card-title mb-0">Wall World 2</h5>
-                        <h5 class="text-danger mb-0">8,89€</h5>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                    <div style="position: relative;">
+                        <img src="img/populares4.jpg" class="rounded-3 card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
                     </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
-                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                            carrito</button>
-                        <button type="button" class="btn-transition btn btn-warning flex-fill"
-                            onclick="window.location.href='pago.html'">Comprar</button>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Sacred 2 Remaster</h5>
+                            <h5 class="text-danger mb-0">13,49€</h5>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                    <div style="position: relative;">
+                        <img src="img/populares5.jpg" class="rounded-3 card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Digimon Story Time Stranger</h5>
+                            <h5 class="text-danger mb-0">49,89€</h5>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                    <div style="position: relative;">
+                        <img src="img/populares6.jpg" class="rounded-3 card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Wall World 2</h5>
+                            <h5 class="text-danger mb-0">8,89€</h5>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
+                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                                carrito</button>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <h1 class="text-center titulos">Recomendados</h1>
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado1.jpg" class="rounded-3 card-img-top" alt="...">
+                    <div style="position: relative;">
+                        <img src="img/recomendado1.jpg" class="rounded-3 card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Borderlands 4</h5>
@@ -312,7 +370,19 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado2.jpg" class="rounded-3 card-img-top" alt="...">
+                    <div style="position: relative;">
+                        <img src="img/recomendado2.jpg" class="rounded-3 card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">VOID/BREAKER</h5>
@@ -332,7 +402,19 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado3.jpg" class="rounded-3 card-img-top" alt="...">
+                    <div style="position: relative;">
+                        <img src="img/recomendado3.jpg" class="rounded-3 card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Kaku: Ancient Seal</h5>
@@ -352,7 +434,19 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado4.jpg" class="rounded-3 card-img-top" alt="...">
+                    <div style="position: relative;">
+                        <img src="img/recomendado4.jpg" class="rounded-3 card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Cyberpunk 2077</h5>
@@ -372,7 +466,19 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado5.jpg" class="rounded-3 card-img-top" alt="...">
+                    <div style="position: relative;">
+                        <img src="img/recomendado5.jpg" class="rounded-3 card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Tales Of Arise</h5>
@@ -392,7 +498,19 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado6.jpg" class="rounded-3 card-img-top" alt="...">
+                    <div style="position: relative;">
+                        <img src="img/recomendado6.jpg" class="rounded-3 card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">One Piece Odyssey</h5>

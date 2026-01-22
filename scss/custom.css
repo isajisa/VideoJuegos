@@ -12023,10 +12023,15 @@ textarea.form-control-lg {
 h1, .h1 {
   font-family: "Electrolize";
   font-size: 3em;
-  color: #0d00ff;
-  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  color: #52a6d3;
+  text-shadow: 0 0 10px #23e6f4, 0 0 20px #39a0e9;
 }
 
+@media (max-width: 500px) {
+  h1, .h1 {
+    font-size: 2em;
+  }
+}
 .titulos {
   font-family: "Electrolize", sans-serif;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
@@ -12064,8 +12069,13 @@ h1, .h1 {
 
 .hero p {
   font-size: 1.2em;
-  color: #fff;
+  color: #6deaf6;
   text-shadow: 0 0 5px #00f0ff;
+}
+
+.tituloVideo {
+  color: #8eecf1;
+  text-shadow: 0 0 15px #0004ff;
 }
 
 .navbar-nav .menu {
