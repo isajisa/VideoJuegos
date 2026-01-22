@@ -1,22 +1,183 @@
+// Importar Bootstrap
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 // Cambiar colores
 $info: #000c41; //cambio de color de info
 $warning: #0ebbfe;
-$font-family-base: 'Roboto', sans-serif; // texto normal
+$font-family-base: 'Roboto', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
 $table-striped-bg: rgba($warning, .25);
 
-.dropdown-menu {
-    .dropdown-item {
-        color: $info; // color lila por defecto
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: $info; // color al pasar el mouse
-        }
-    }
+.btn.btn-warning.btn-transition {
+  background-color: #0ebbfe;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-// Importar Bootstrap
+.btn.btn-warning.btn-transition:hover {
+  background-color: #3075f7;
+  transform: scale(1.05);
+}
+
+.flecha-svg {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.flecha-svg.mostrar {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero{
+  width: auto;
+  height: 70vh;
+}
+
+/* Hero y contenido */
+.hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
 @import "../bootstrap-5.3.2/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+h1 {
+  font-family: 'Electrolize';
+  font-size: 3em;
+  color: #0d00ff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+.titulos {
+  font-family: 'Electrolize', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);  // Responsive
+  font-weight: 700;
+  background: linear-gradient(135deg, #00f0ff 0%, #0099cc 50%, #00f0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  position: relative;
+  margin: 2rem 0;
+  letter-spacing: 0.05em;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+    border-radius: 2px;
+  }
+  
+  &::before {
+    left: 20%;
+  }
+  
+  &::after {
+    right: 20%;
+  }
+  
+  &::selection {
+    background: rgba(0, 240, 255, 0.3);
+  }
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+.navbar-nav .menu {
+  font-family: 'Electrolize';
+  font-size: 1.3rem;   // más grande
+  letter-spacing: 0.03em;
+}
+
+// Formulario gaming - MEDIO TONO
+.form-label {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #00f0ff;
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.4);
+}
+
+.form-control,
+.form-select {
+  background: rgba(20, 25, 40, 0.85) !important;  // Gris azulado medio
+  border: 2px solid #4a5568 !important;
+  border-radius: 12px !important;
+  color: #e2e8f0 !important;
+  font-size: 1rem;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: rgba(10, 15, 35, 0.95) !important;
+  border-color: #00f0ff !important;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.form-control::placeholder {
+  color: rgba(226, 232, 240, 0.6);
+}
+
+.form-check-input:checked {
+  background-color: #00f0ff;
+  border-color: #00f0ff;
+}
+
+fieldset {
+  background: linear-gradient(145deg, rgba(30, 35, 50, 0.9), rgba(45, 55, 70, 0.9));
+  border: 2px solid #64748b !important;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+legend {
+  font-family: 'Electrolize', sans-serif;
+  color: #00f0ff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+  border: 1px solid #64748b;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.texto{
+  color: rgb(255, 255, 255);
+}
+
+.card{
+  background: linear-gradient(145deg, rgba(30, 35, 50, 0.9), rgba(45, 55, 70, 0.9));
+  border: 2px solid #64748b;
+}
+
+.card-title{
+  color: rgb(255, 255, 255);
+}
+
+.btn{
+  font-family: 'Electrolize';
+}

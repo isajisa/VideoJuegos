@@ -10,30 +10,42 @@
     <title>GameVault</title>
 </head>
 
-<body>
-    <header class="py-2 bg-dark text-white">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo.svg" alt="Logo" width="100" height="auto" class="me-2">
-                <h1>GameVault</h1>
-            </a>
-            <form class="d-none d-sm-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
-            </form>
-            <div class="d-flex align-items-center">
-                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
-                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
-                <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
-                    <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
-                </a>
+<body class="bg-info">
+    <header class="py-2 bg-info text-white">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-4 col-md-3 d-flex align-items-center">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
+                        <img src="img/logo.svg" alt="Logo" width="100" class="me-2">
+                        <h1 class="m-0">GameVault</h1>
+                    </a>
+                </div>
+
+                <!-- Buscador -->
+                <div class="col-4 col-md-6 d-none d-sm-flex justify-content-center">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-warning" type="button" data-bs-toggle="popover"
+                            data-bs-trigger="hover focus" data-bs-placement="bottom" title="No disponible"
+                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                    </form>
+                </div>
+
+                <!-- Iconos derecha -->
+                <div class="col-4 col-md-3 d-flex justify-content-end align-items-center">
+                    <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" class="me-2"
+                        data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                        title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="identificacionUsuario.html">
+                        <img src="img/user.svg" alt="Logo" width="30">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm bg-secondary">
+    <nav class="navbar navbar-expand-sm bg-warning">
         <div class="container-fluid">
             <div class="d-flex d-sm-none align-items-center w-100">
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
@@ -43,346 +55,375 @@
                 </button>
                 <form class="d-flex flex-grow-1" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-placement="bottom" title="No disponible"
+                        data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
                 </form>
             </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-info" aria-current="page" href="index.html"><b>Inicio</b></a>
+                        <a class="menu nav-link active text-info" aria-current="page"
+                            href="index.html"><b>Inicio</b></a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle px-0 text-info" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Juegos</button>
+                            <button class="menu btn dropdown-toggle px-0 text-info" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Juegos</button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-info" href="juegos.html">Juegos</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#pc">PC</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html">Juegos</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#pc">PC</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a>
+                                </li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                        <a class="menu nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="comparativa.html">Comparativa de Juegos</a>
+                        <a class="menu nav-link text-info" href="comparativa.html">Comparativas</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Video tutorial
+                        <button type="button" class="menu btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Tutorial
                         </button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
+                        <a class="menu nav-link text-info" href="reservaJuegos.html">Reservas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="contacto.html">Contacto</a>
+                        <a class="menu nav-link text-info" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-warning">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body bg-info">
                     <video id="tutorialVideo" controls width="100%">
                         <source src="video_tutorial/Video_tutorial.mp4" type="video/mp4">
                         Tu navegador no soporta video HTML5.
                     </video>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer bg-black">
                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid gx-0 px-0 d-none d-sm-block">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/imagen1Carrusel.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
-                        <h1>Los mejores juegos al mejor precio</h1>
-                      </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/imagen2Carrusel.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
-                        <h1>Los mejores juegos al mejor precio</h1>
-                      </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/imagen3Carrusel.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
-                        <h1>Los mejores juegos al mejor precio</h1>
-                      </div>
+    <main class="container-fluid my-4">
+        <section class="hero position-relative overflow-hidden">
+            <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+                <source src="video_tutorial/badground.mp4" type="video/mp4">
+                Tu navegador no soporta vídeo HTML5.
+            </video>
+
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+            <div class="container h-100 position-relative d-flex align-items-center justify-content-end">
+                <div class="text-white text-center">
+                    <h1>Los mejores juegos al mejor precio</h1>
+                    <p class="fs-5">Keys digitales · Entrega inmediata · 100% seguro</p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-    </div>
+        </section>
 
-    <main class="container-fluid my-4">
-        <h1 class="text-center">Juegos mas populares</h1>
+        <h1 class="text-center titulos">Más populares</h1>
         <div class="row g-4 mb-4">
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
-                    <img src="img/populares1.jpg" class="card-img-top">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                    <div style="position: relative;">
+                        <img src="img/populares1.jpg" class="rounded-3 card-img-top" alt="Battlefield 6">
+
+                        <!-- Corazón en esquina superior derecha -->
+                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                         2 5.42 4.42 3 7.5 3
+                         c1.74 0 3.41 0.81 4.5 2.09
+                         C13.09 3.81 14.76 3 16.5 3
+                         19.58 3 22 5.42 22 8.5
+                         c0 3.78-3.4 6.86-8.55 11.54
+                         L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                        </svg>
+                    </div>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Battlefield 6</h5>
                             <h5 class="text-danger mb-0">52,91€</h5>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
                                 data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
                                 carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
-                    <img src="img/populares2.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h5 class="card-title mb-0">Jurassic World Evolution 3</h5>
-                            <h5 class="text-danger mb-0">52,99€</h5>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                                carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
-                        </div>
-                    </div>
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                    <div style="position: relative;">
+                    <img src="img/populares2.jpg" class="rounded-3 card-img-top">
+                    <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
+                        style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                 2 5.42 4.42 3 7.5 3
+                 c1.74 0 3.41 0.81 4.5 2.09
+                 C13.09 3.81 14.76 3 16.5 3
+                 19.58 3 22 5.42 22 8.5
+                 c0 3.78-3.4 6.86-8.55 11.54
+                 L12 21.35z" fill="none" stroke="#ccc" stroke-width="2" pointer-events="all" />
+                    </svg>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
-                    <img src="img/populares3.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h5 class="card-title mb-0">Football Manager 26</h5>
-                            <h5 class="text-danger mb-0">35,99€</h5>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                                carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
-                        </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Jurassic World Evolution 3</h5>
+                        <h5 class="text-danger mb-0">52,99€</h5>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
-                    <img src="img/populares4.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h5 class="card-title mb-0">Sacred 2 Remaster</h5>
-                            <h5 class="text-danger mb-0">13,49€</h5>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                                carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
-                    <img src="img/populares5.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h5 class="card-title mb-0">Digimon Story Time Stranger</h5>
-                            <h5 class="text-danger mb-0">49,89€</h5>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                                carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
-                    <img src="img/populares6.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h5 class="card-title mb-0">Wall World 2</h5>
-                            <h5 class="text-danger mb-0">8,89€</h5>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
-                                data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
-                                carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
-                        </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
+                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                            carrito</button>
+                        <button type="button" class="btn-transition btn btn-warning flex-fill"
+                            onclick="window.location.href='pago.html'">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                <img src="img/populares3.jpg" class="rounded-3 card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Football Manager 26</h5>
+                        <h5 class="text-danger mb-0">35,99€</h5>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
+                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                            carrito</button>
+                        <button type="button" class="btn-transition btn btn-warning flex-fill"
+                            onclick="window.location.href='pago.html'">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                <img src="img/populares4.jpg" class="rounded-3 card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Sacred 2 Remaster</h5>
+                        <h5 class="text-danger mb-0">13,49€</h5>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
+                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                            carrito</button>
+                        <button type="button" class="btn-transition btn btn-warning flex-fill"
+                            onclick="window.location.href='pago.html'">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                <img src="img/populares5.jpg" class="rounded-3 card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Digimon Story Time Stranger</h5>
+                        <h5 class="text-danger mb-0">49,89€</h5>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
+                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                            carrito</button>
+                        <button type="button" class="btn-transition btn btn-warning flex-fill"
+                            onclick="window.location.href='pago.html'">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
+                <img src="img/populares6.jpg" class="rounded-3 card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Wall World 2</h5>
+                        <h5 class="text-danger mb-0">8,89€</h5>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn-transition btn btn-warning flex-fill" data-bs-toggle="popover"
+                            data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
+                            carrito</button>
+                        <button type="button" class="btn-transition btn btn-warning flex-fill"
+                            onclick="window.location.href='pago.html'">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
-        <h1 class="text-center">Juegos recomendados</h1>
+        <h1 class="text-center titulos">Recomendados</h1>
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado1.jpg" class="card-img-top" alt="...">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <img src="img/recomendado1.jpg" class="rounded-3 card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Borderlands 4</h5>
                             <h5 class="text-danger mb-0">42,19€</h5>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
                                 data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
                                 carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado2.jpg" class="card-img-top" alt="...">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <img src="img/recomendado2.jpg" class="rounded-3 card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">VOID/BREAKER</h5>
                             <h5 class="text-danger mb-0">15,05€</h5>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
                                 data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
                                 carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado3.jpg" class="card-img-top" alt="...">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <img src="img/recomendado3.jpg" class="rounded-3 card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Kaku: Ancient Seal</h5>
                             <h5 class="text-danger mb-0">10,99€</h5>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
                                 data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
                                 carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado4.jpg" class="card-img-top" alt="...">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <img src="img/recomendado4.jpg" class="rounded-3 card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Cyberpunk 2077</h5>
                             <h5 class="text-danger mb-0">27,33€</h5>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
                                 data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
                                 carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado5.jpg" class="card-img-top" alt="...">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <img src="img/recomendado5.jpg" class="rounded-3 card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">Tales Of Arise</h5>
                             <h5 class="text-danger mb-0">8€</h5>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
                                 data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
                                 carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <img src="img/recomendado6.jpg" class="card-img-top" alt="...">
+                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <img src="img/recomendado6.jpg" class="rounded-3 card-img-top" alt="...">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h5 class="card-title mb-0">One Piece Odyssey</h5>
                             <h5 class="text-danger mb-0">27,22€</h5>
                         </div>
                         <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-warning flex-fill" data-bs-toggle="popover"
-                                data-bs-trigger="click" data-bs-placement="bottom" title="No disponible"
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom"
+                                title="No disponible"
                                 data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Añadir al
                                 carrito</button>
-                            <a href="pago.html"><button type="button"
-                                    class="btn btn-warning flex-fill">Comprar</button></a>
+                            <button type="button" class="btn-transition btn btn-warning flex-fill"
+                                onclick="window.location.href='pago.html'">Comprar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <svg id="flecha-top" class="flecha-svg" viewBox="0 0 50 50" width="50" height="50">
+
+            <circle cx="25" cy="25" r="25" fill="#0ebbfe" />
+
+            <path d="M25 32 V18 M20 23 L25 18 L30 23" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" dur="2.0s"
+                    fill="freeze" repeatCount="indefinite" />
+            </path>
+        </svg>
     </main>
 
-    <footer class="mt-auto bg-dark text-white pt-4 pb-4">
+    <footer class="mt-auto bg-black text-white pt-4 pb-4">
         <div class="container">
             <div class="row">
                 <!-- Información de la empresa -->
@@ -429,16 +470,16 @@
                     <h5>Síguenos</h5>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="https://www.facebook.com" class="text-white">
-                                <img src="img/facebook.svg" alt="Logo" width="20" height="auto" class="me-2">
+                                <img src="img/facebook.svg" alt="Logo" width="20" class="me-2">
                             </a></li>
                         <li class="list-inline-item"><a href="https://twitter.com" class="text-white">
-                                <img src="img/twitter.svg" alt="Logo" width="20" height="auto" class="me-2">
+                                <img src="img/twitter.svg" alt="Logo" width="20" class="me-2">
                             </a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com" class="text-white">
-                                <img src="img/instagram.svg" alt="Logo" width="20" height="auto" class="me-2">
+                                <img src="img/instagram.svg" alt="Logo" width="20" class="me-2">
                             </a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com" class="text-white">
-                                <img src="img/linkedin.svg" alt="Logo" width="20" height="auto" class="me-2">
+                                <img src="img/linkedin.svg" alt="Logo" width="20" class="me-2">
                             </a></li>
                     </ul>
                 </div>

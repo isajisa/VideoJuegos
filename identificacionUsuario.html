@@ -10,30 +10,38 @@
     <title>GameVault</title>
 </head>
 
-<body>
-    <header class="py-2 bg-dark text-white">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo.svg" alt="Logo" width="100" height="auto" class="me-2">
-                <h1>GameVault</h1>
-            </a>
-            <form class="d-none d-sm-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
-            </form>
-            <div class="d-flex align-items-center">
-                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
-                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
-                <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
-                    <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
-                </a>
+<body class="bg-info">
+    <header class="py-2 bg-info text-white">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-4 col-md-3 d-flex align-items-center">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
+                        <img src="img/logo.svg" alt="Logo" width="100" height="auto" class="me-2">
+                        <h1 class="m-0">GameVault</h1>
+                    </a>
+                </div>
+
+                <!-- Buscador -->
+                <div class="col-4 col-md-6 d-none d-sm-flex justify-content-center">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-warning" type="button">Buscar</button>
+                    </form>
+                </div>
+
+                <!-- Iconos derecha -->
+                <div class="col-4 col-md-3 d-flex justify-content-end align-items-center">
+                    <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="identificacionUsuario.html">
+                        <img src="img/user.svg" alt="Logo" width="30" height="auto">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm bg-secondary">
+    <nav class="navbar navbar-expand-sm bg-warning">
         <div class="container-fluid">
             <div class="d-flex d-sm-none align-items-center w-100">
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
@@ -51,37 +59,37 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-info" aria-current="page" href="index.html">Inicio</a>
+                        <a class="menu nav-link text-info" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle px-0 text-info" type="button" data-bs-toggle="dropdown"
+                            <button class="menu btn dropdown-toggle px-0 text-info" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Juegos</button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-info" href="juegos.html">Juegos</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#pc">PC</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html">Juegos</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#pc">PC</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                        <a class="menu nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="comparativa.html">Comparativa de Juegos</a>
+                        <a class="menu nav-link text-info" href="comparativa.html">Comparativas</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Video tutorial
+                        <button type="button" class="menu btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Tutorial
                         </button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
+                        <a class="menu nav-link text-info" href="reservaJuegos.html">Reservas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="contacto.html">Contacto</a>
+                        <a class="menu nav-link text-info" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -89,19 +97,19 @@
     </nav>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-warning">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body bg-info">
                     <video id="tutorialVideo" controls width="100%">
                         <source src="video_tutorial/Video_tutorial.mp4" type="video/mp4">
                         Tu navegador no soporta video HTML5.
                     </video>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer bg-black">
                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
@@ -171,9 +179,8 @@
             </div>
         </div>
     </main>
-<br>
-<br>
-    <footer class="mt-auto bg-dark text-white pt-4 pb-4 mt-auto">
+    
+    <footer class="mt-auto bg-black text-white pt-4 pb-4 mt-auto">
         <div class="container">
             <div class="row">
                 <!-- Información de la empresa -->

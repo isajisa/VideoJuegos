@@ -10,30 +10,38 @@
     <title>GameVault</title>
 </head>
 
-<body>
-    <header class="py-2 bg-dark text-white">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo.svg" alt="Logo" width="100" height="auto" class="me-2">
-                <h1>GameVault</h1>
-            </a>
-            <form class="d-none d-sm-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
-            </form>
-            <div class="d-flex align-items-center">
-                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
-                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
-                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
-                <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
-                    <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
-                </a>
+<body class="bg-info">
+    <header class="py-2 bg-info text-white">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-4 col-md-3 d-flex align-items-center">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
+                        <img src="img/logo.svg" alt="Logo" width="100" height="auto" class="me-2">
+                        <h1 class="m-0">GameVault</h1>
+                    </a>
+                </div>
+
+                <!-- Buscador -->
+                <div class="col-4 col-md-6 d-none d-sm-flex justify-content-center">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-warning" type="button">Buscar</button>
+                    </form>
+                </div>
+
+                <!-- Iconos derecha -->
+                <div class="col-4 col-md-3 d-flex justify-content-end align-items-center">
+                    <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="identificacionUsuario.html">
+                        <img src="img/user.svg" alt="Logo" width="30" height="auto">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm bg-secondary">
+    <nav class="navbar navbar-expand-sm bg-warning">
         <div class="container-fluid">
             <div class="d-flex d-sm-none align-items-center w-100">
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
@@ -51,37 +59,37 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-info" aria-current="page" href="index.html">Inicio</a>
+                        <a class="menu nav-link text-info" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle px-0 text-info" type="button" data-bs-toggle="dropdown"
+                            <button class="menu btn dropdown-toggle px-0 text-info" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Juegos</button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-info" href="juegos.html">Juegos</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#pc">PC</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
-                                <li><a class="dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html">Juegos</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#pc">PC</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                        <a class="menu nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="comparativa.html">Comparativa de Juegos</a>
+                        <a class="menu nav-link text-info" href="comparativa.html">Comparativas</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Video tutorial
+                        <button type="button" class="menu btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Tutorial
                         </button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="reservaJuegos.html">Reserva de juegos</a>
+                        <a class="menu nav-link text-info" href="reservaJuegos.html">Reservas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-info" href="contacto.html"><b>Contacto</b></a>
+                        <a class="menu nav-link active text-info" href="contacto.html"><b>Contacto</b></a>
                     </li>
                 </ul>
             </div>
@@ -89,19 +97,19 @@
     </nav>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-warning">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body bg-info">
                     <video id="tutorialVideo" controls width="100%">
                         <source src="video_tutorial/Video_tutorial.mp4" type="video/mp4">
                         Tu navegador no soporta video HTML5.
                     </video>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer bg-black">
                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
@@ -111,7 +119,7 @@
     <main class="container my-4">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-6 my-4">
-                <h1>Formulario de contacto</h1>
+                <h1 class="titulos">Formulario de contacto</h1>
                 <form action="">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre:</label>
@@ -145,28 +153,39 @@
 
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="acepto" required>
-                        <label class="form-check-label" for="acepto">Acepto la política de privacidad</label>
+                        <label class="form-check-label texto" for="acepto">Acepto la política de privacidad</label>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
             <div class="col-12 col-md-12 col-lg-6 my-4 text-center">
-                <h1>Ubicación</h1>
+                <h1 class="titulos">Ubicación</h1>
                 <div class="ratio ratio-16x9">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1155.5440635652142!2d-6.935181411999501!3d37.2688581545552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd11cfe3a775cbab%3A0x5674d9aca8c778c6!2sAv.%20de%20Andaluc%C3%ADa%2C%2043%2C%2021005%20Huelva!5e1!3m2!1ses!2ses!4v1763662563289!5m2!1ses!2ses"
                         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                <p><strong>Correo de soporte:</strong> GameVault@gmail.com</p>
-                <p><strong>Número de teléfono:</strong> +34 645 34 36 63</p>
-                <p><strong>Ubicación:</strong> Av. Andalucía 43, Huelva</p>
+                <p class="texto"><strong>Correo de soporte:</strong> GameVault@gmail.com</p>
+                <p class="texto"><strong>Número de teléfono:</strong> +34 645 34 36 63</p>
+                <p class="texto"><strong>Ubicación:</strong> Av. Andalucía 43, Huelva</p>
             </div>
         </div>
+        
+        <svg id="flecha-top" class="flecha-svg" viewBox="0 0 50 50" width="50" height="50">
+
+            <circle cx="25" cy="25" r="25" fill="#0ebbfe" />
+
+            <path d="M25 32 V18 M20 23 L25 18 L30 23" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" dur="2.0s"
+                    fill="freeze" repeatCount="indefinite"/>
+            </path>
+        </svg>
     </main>
 
-    <footer class="mt-auto bg-dark text-white pt-4 pb-4">
+    <footer class="mt-auto bg-black text-white pt-4 pb-4">
         <div class="container">
             <div class="row">
                 <!-- Información de la empresa -->
