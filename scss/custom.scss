@@ -8,17 +8,22 @@ $info: #000c41; //cambio de color de info
 $warning: #0ebbfe;
 $font-family-base: 'Roboto', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
-$table-striped-bg: rgba($warning, .25);
+$table-striped-bg: rgba(#0eadd175, .50);
 
+
+// TRANSFORMACION EN EL BOTON DE ESE COLOR PARA QUE HAGA UNA TRANSFORMACION DE COLOR
 .btn.btn-warning.btn-transition {
   background-color: #0ebbfe;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+// TRANSFORMACION DE HOVER EN EL BOTON DE ESE COLOR PARA HACER UN CAMBIO DE COLOR Y QUE SE AGRANDE
 .btn.btn-warning.btn-transition:hover {
   background-color: #3075f7;
+  border-color: #3075f7;
   transform: scale(1.05);
 }
+
 
 .flecha-svg {
   position: fixed;
@@ -26,17 +31,19 @@ $table-striped-bg: rgba($warning, .25);
   right: 30px;
   cursor: pointer;
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 1000;
 }
 
+//HACE QUE SE MUESTRE Y DESAPARECE CON FUNCIONES JS
 .flecha-svg.mostrar {
   opacity: 1;
   pointer-events: auto;
 }
 
-.hero{
+// VIDEO DE PORTADA EN EL INDEX
+.hero {
   width: auto;
   height: 70vh;
 }
@@ -62,45 +69,21 @@ h1 {
 
 @media (max-width: 500px) {
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 }
 
 .titulos {
   font-family: 'Electrolize', sans-serif;
-  font-size: clamp(2.2rem, 5vw, 3.5rem);  // Responsive
+  font-size: clamp(2.2rem, 5vw, 3.5rem); // Responsive
   font-weight: 700;
   background: linear-gradient(135deg, #00f0ff 0%, #0099cc 50%, #00f0ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-align: center;
   position: relative;
-  margin: 2rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.05em;
-  
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #00f0ff, transparent);
-    border-radius: 2px;
-  }
-  
-  &::before {
-    left: 20%;
-  }
-  
-  &::after {
-    right: 20%;
-  }
-  
-  &::selection {
-    background: rgba(0, 240, 255, 0.3);
-  }
 }
 
 .hero p {
@@ -116,7 +99,7 @@ h1 {
 
 .navbar-nav .menu {
   font-family: 'Electrolize';
-  font-size: 1.3rem;   // más grande
+  font-size: 1.3rem; // más grande
   letter-spacing: 0.03em;
 }
 
@@ -131,7 +114,7 @@ h1 {
 
 .form-control,
 .form-select {
-  background: rgba(20, 25, 40, 0.85) !important;  // Gris azulado medio
+  background: rgba(20, 25, 40, 0.85) !important; // Gris azulado medio
   border: 2px solid #4a5568 !important;
   border-radius: 12px !important;
   color: #e2e8f0 !important;
@@ -162,7 +145,7 @@ fieldset {
   background: linear-gradient(145deg, rgba(30, 35, 50, 0.9), rgba(45, 55, 70, 0.9));
   border: 2px solid #64748b !important;
   border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 legend {
@@ -176,19 +159,123 @@ legend {
   background: rgba(0, 240, 255, 0.1);
 }
 
-.texto{
+.texto {
   color: rgb(255, 255, 255);
 }
 
-.card{
+.card {
   background: linear-gradient(145deg, rgba(30, 35, 50, 0.9), rgba(45, 55, 70, 0.9));
   border: 2px solid #64748b;
 }
 
-.card-title{
+.card-title {
   color: rgb(255, 255, 255);
 }
 
-.btn{
+.btn {
   font-family: 'Electrolize';
+}
+
+.buscador {
+  background-color: rgb(8, 30, 230);
+  border-color: rgb(8, 30, 230);
+}
+
+.buscador:hover {
+  background-color: rgb(8, 26, 190);
+}
+
+.nav-link:hover,
+.dropdown-toggle.menu:hover,
+.btn.menu:hover {
+  background-color: rgb(8, 30, 230);
+  border-radius: 8px;
+}
+
+ul.dropdown-menu {
+  border-color: #000c41;
+  background-color: #0ebbfe;
+}
+
+a.dropdown-item:hover {
+  background-color: rgb(8, 30, 230);
+  border-radius: 8px;
+}
+
+.navbar-toggler {
+  border-color: #000c41;
+}
+
+.img-like-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.img-rounded {
+  border-radius: 1rem;
+}
+
+.likeHeart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.likeHeart {
+  transition: all 0.3s ease;
+}
+
+.likeHeart:hover {
+  transform: scale(1.2);
+}
+
+.logo {
+  width: 125px;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 75px;
+  }
+}
+
+.bg-warning {
+  background: linear-gradient(90deg, #14b8ff, #00f5ff);
+}
+
+.navbar .navbar-collapse {
+  position: relative;
+}
+
+/* MENÚ PLATAFORMAS */
+.navbar-nav {
+  position: relative;
+  z-index: 2; /* encima del canvas */
+}
+
+/* CANVAS DETRÁS */
+.platform-wave {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%; 
+  height: 60px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+@media (max-width: 550px) {
+  .platform-wave {
+    display: none;
+  }
+}
+
+.modal-title {
+  font-family: 'Electrolize';
+  color: $info;
 }

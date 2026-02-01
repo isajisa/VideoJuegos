@@ -8,6 +8,7 @@
 
 .btn.btn-warning.btn-transition:hover {
   background-color: #3075f7;
+  border-color: #3075f7;
   transform: scale(1.05);
 }
 
@@ -1904,7 +1905,7 @@ progress {
   --bs-table-border-color: var(--bs-border-color);
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: var(--bs-emphasis-color);
-  --bs-table-striped-bg: rgba(14, 187, 254, 0.25);
+  --bs-table-striped-bg: rgba(14, 173, 209, 0.5);
   --bs-table-active-color: var(--bs-emphasis-color);
   --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
   --bs-table-hover-color: var(--bs-emphasis-color);
@@ -12040,31 +12041,9 @@ h1, .h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-align: center;
   position: relative;
-  margin: 2rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.05em;
-}
-.titulos::before, .titulos::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
-  border-radius: 2px;
-}
-.titulos::before {
-  left: 20%;
-}
-.titulos::after {
-  right: 20%;
-}
-.titulos::-moz-selection {
-  background: rgba(0, 240, 255, 0.3);
-}
-.titulos::selection {
-  background: rgba(0, 240, 255, 0.3);
 }
 
 .hero p {
@@ -12158,4 +12137,106 @@ legend {
 
 .btn {
   font-family: "Electrolize";
+}
+
+.buscador {
+  background-color: rgb(8, 30, 230);
+  border-color: rgb(8, 30, 230);
+}
+
+.buscador:hover {
+  background-color: rgb(8, 26, 190);
+}
+
+.nav-link:hover,
+.dropdown-toggle.menu:hover,
+.btn.menu:hover {
+  background-color: rgb(8, 30, 230);
+  border-radius: 8px;
+}
+
+ul.dropdown-menu {
+  border-color: #000c41;
+  background-color: #0ebbfe;
+}
+
+a.dropdown-item:hover {
+  background-color: rgb(8, 30, 230);
+  border-radius: 8px;
+}
+
+.navbar-toggler {
+  border-color: #000c41;
+}
+
+.img-like-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.img-rounded {
+  border-radius: 1rem;
+}
+
+.likeHeart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.likeHeart {
+  transition: all 0.3s ease;
+}
+
+.likeHeart:hover {
+  transform: scale(1.2);
+}
+
+.logo {
+  width: 125px;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 75px;
+  }
+}
+.bg-warning {
+  background: linear-gradient(90deg, #14b8ff, #00f5ff);
+}
+
+.navbar .navbar-collapse {
+  position: relative;
+}
+
+/* MENÚ PLATAFORMAS */
+.navbar-nav {
+  position: relative;
+  z-index: 2; /* encima del canvas */
+}
+
+/* CANVAS DETRÁS */
+.platform-wave {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+@media (max-width: 550px) {
+  .platform-wave {
+    display: none;
+  }
+}
+.modal-title {
+  font-family: "Electrolize";
+  color: #000c41;
 }/*# sourceMappingURL=custom.css.map */

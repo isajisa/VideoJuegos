@@ -15,14 +15,14 @@
     <header class="py-2 bg-info text-white">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo.svg" alt="Logo" width="100" height="auto">
+                <img src="img/logo.svg" alt="Logo" class="logo">
                 <h1>GameVault</h1>
             </a>
             <div class="d-none d-lg-flex justify-content-center flex-grow-1 mx-4">
                 <form class="d-flex w-100" style="max-width: 550px;">
                     <input class="form-control me-2 fs-5 px-4 py-3" type="search" placeholder="🔍 Buscar juegos..."
                         aria-label="Search" style="border-radius: 30px 0 0 30px;">
-                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    <button class="buscador btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
                         data-bs-placement="bottom" title="No disponible"
                         data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
                     </button>
@@ -49,7 +49,7 @@
                 </button>
                 <form class="d-flex flex-grow-1" role="search">
                     <input class="form-control me-2 fs-5 px-4 py-3" type="search" placeholder="🔍 Buscar juegos..." aria-label="Search"  style="border-radius: 30px 0 0 30px;">
-                    <button class="btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    <button class="buscador btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
                         data-bs-placement="bottom" title="No disponible"
                         data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
                 </form>
@@ -63,7 +63,7 @@
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="menu btn dropdown-toggle px-0 text-info" type="button"
+                            <button class="menu btn dropdown-toggle w-100 text-start px-0 text-info" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Juegos</button>
                             <ul class="dropdown-menu">
                                 <li><a class="menu dropdown-item text-info" href="juegos.html">Juegos</a></li>
@@ -82,7 +82,7 @@
                         <a class="menu nav-link text-info" href="comparativa.html">Comparativas</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="menu btn btn-warning" data-bs-toggle="modal"
+                        <button type="button" class="menu btn w-100 text-start ms-0 ps-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Tutorial
                         </button>
@@ -102,7 +102,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-warning">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Como activar las claves en las plataformas</b></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-info">
@@ -139,13 +139,10 @@
         <div class="row g-4 mb-4">
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                    <div style="position: relative;">
-                        <img src="img/populares1.jpg" class="rounded-3 card-img-top" alt="Battlefield 6">
-
-                        <!-- Corazón en esquina superior derecha -->
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
+                    <div class="img-like-wrapper">
+                        <img src="img/populares1.jpg" class="card-img-top" alt="Battlefield 6">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -173,11 +170,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                    <div style="position: relative;">
-                        <img src="img/populares2.jpg" class="rounded-3 card-img-top">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
+                    <div class="img-like-wrapper">
+                        <img src="img/populares2.jpg" class="card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                  2 5.42 4.42 3 7.5 3
                  c1.74 0 3.41 0.81 4.5 2.09
@@ -205,11 +201,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                    <div style="position: relative;">
-                        <img src="img/populares3.jpg" class="rounded-3 card-img-top">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
+                    <div class="img-like-wrapper">
+                        <img src="img/populares3.jpg" class="card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -237,11 +232,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                    <div style="position: relative;">
-                        <img src="img/populares4.jpg" class="rounded-3 card-img-top">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
+                    <div class="img-like-wrapper">
+                        <img src="img/populares4.jpg" class="card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -269,11 +263,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                    <div style="position: relative;">
-                        <img src="img/populares5.jpg" class="rounded-3 card-img-top">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
+                    <div class="img-like-wrapper">
+                        <img src="img/populares5.jpg" class="card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -301,11 +294,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego popular">
-                    <div style="position: relative;">
-                        <img src="img/populares6.jpg" class="rounded-3 card-img-top">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego popular">
+                    <div class="img-like-wrapper">
+                        <img src="img/populares6.jpg" class="card-img-top">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -335,13 +327,13 @@
         </div>
 
         <h1 class="text-center titulos">Recomendados</h1>
+        
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <div style="position: relative;">
-                        <img src="img/recomendado1.jpg" class="rounded-3 card-img-top" alt="...">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <div class="img-like-wrapper">
+                        <img src="img/recomendado1.jpg" class="card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -369,11 +361,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <div style="position: relative;">
-                        <img src="img/recomendado2.jpg" class="rounded-3 card-img-top" alt="...">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <div class="img-like-wrapper">
+                        <img src="img/recomendado2.jpg" class="card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -401,11 +392,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <div style="position: relative;">
-                        <img src="img/recomendado3.jpg" class="rounded-3 card-img-top" alt="...">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <div class="img-like-wrapper">
+                        <img src="img/recomendado3.jpg" class="card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -433,11 +423,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <div style="position: relative;">
-                        <img src="img/recomendado4.jpg" class="rounded-3 card-img-top" alt="...">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <div class="img-like-wrapper">
+                        <img src="img/recomendado4.jpg" class="card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -465,11 +454,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <div style="position: relative;">
-                        <img src="img/recomendado5.jpg" class="rounded-3 card-img-top" alt="...">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <div class="img-like-wrapper">
+                        <img src="img/recomendado5.jpg" class="card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09
@@ -497,11 +485,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg rounded-3" data-bs-toggle="tooltip" title="Juego recomendado">
-                    <div style="position: relative;">
-                        <img src="img/recomendado6.jpg" class="rounded-3 card-img-top" alt="...">
-                        <svg class="likeHeart" viewBox="0 0 24 24" width="30" height="30"
-                            style="cursor:pointer; position:absolute; top:10px; right:10px; z-index:10;">
+                <div class="card shadow-lg rounded-4" data-bs-toggle="tooltip" title="Juego recomendado">
+                    <div class="img-like-wrapper">
+                        <img src="img/recomendado6.jpg" class="card-img-top" alt="...">
+                        <svg class="likeHeart" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
                          2 5.42 4.42 3 7.5 3
                          c1.74 0 3.41 0.81 4.5 2.09

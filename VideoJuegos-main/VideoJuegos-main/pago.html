@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="stylesheet" href="scss/custom.css">
+  <script src="bootstrap-5.3.2/dist/js/bootstrap.bundle.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>GameVault</title>
+</head>
+
+<body class="bg-info">
+  <header class="py-2 bg-info text-white">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.svg" alt="Logo" width="100" height="auto">
+                <h1>GameVault</h1>
+            </a>
+            <div class="d-none d-lg-flex justify-content-center flex-grow-1 mx-4">
+                <form class="d-flex w-100" style="max-width: 550px;">
+                    <input class="form-control me-2 fs-5 px-4 py-3" type="search" placeholder="🔍 Buscar juegos..."
+                        aria-label="Search" style="border-radius: 30px 0 0 30px;">
+                    <button class="buscador btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-placement="bottom" title="No disponible"
+                        data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                    </button>
+                </form>
+            </div>
+            <div class="d-flex align-items-center">
+                <img src="img/shopping-cart.svg" alt="Carrito de compra" width="30" height="auto" class="me-2"
+                    data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom"
+                    title="No disponible" data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">
+                <a class="navbar-brand d-flex align-items-center" href="identificacionUsuario.html">
+                    <img src="img/user.svg" alt="Logo" width="30" height="auto" class="me-2">
+                </a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <div class="d-flex d-lg-none align-items-center w-100">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control me-2 fs-5 px-4 py-3" type="search" placeholder="🔍 Buscar juegos..." aria-label="Search"  style="border-radius: 30px 0 0 30px;">
+                    <button class="buscador btn btn-warning" type="button" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-placement="bottom" title="No disponible"
+                        data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Buscar</button>
+                </form>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="menu nav-link text-info" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="menu btn dropdown-toggle w-100 text-start px-0 text-info" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Juegos</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="menu dropdown-item text-info" href="juegos.html">Juegos</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#pc">PC</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#nintendo">Nintendo</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#xbox">Xbox</a></li>
+                                <li><a class="menu dropdown-item text-info" href="juegos.html#play">PlayStation</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu nav-link text-info" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu nav-link text-info" href="comparativa.html">Comparativas</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="menu btn btn-warning w-100 text-start ms-0 ps-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Tutorial
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu nav-link text-info" href="reservaJuegos.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu nav-link text-info" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header bg-warning">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Como activar las claves en las plataformas</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body bg-info">
+                  <video id="tutorialVideo" controls width="100%">
+                      <source src="video_tutorial/Video_tutorial.mp4" type="video/mp4">
+                      Tu navegador no soporta video HTML5.
+                  </video>
+              </div>
+              <div class="modal-footer bg-black">
+                  <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <main class="container-fluid my-4">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-8 mb-4">
+          <form action="">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <h4 class="titulos">Dirección</h4>
+
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre completo:</label>
+                  <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="direccion" class="form-label">Dirección:</label>
+                  <input type="text" id="direccion" name="direccion" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="ciudad" class="form-label">Ciudad:</label>
+                  <input type="text" id="ciudad" name="ciudad" class="form-control">
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="estado" class="form-label">Provincia:</label>
+                    <input type="text" id="estado" name="estado" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="codigoPostal" class="form-label">Código Postal:</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h4 class="titulos">Pago</h4>
+
+                <div class="mb-3">
+                  <label for="nombreTarjeta" class="form-label">Nombre del titular de la tarjeta:</label>
+                  <input type="text" id="nombreTarjeta" name="nombreTarjeta" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="numeroTarjeta" class="form-label">Número de tarjeta:</label>
+                  <input type="text" id="numeroTarjeta" name="numeroTarjeta" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="mesExpiracion" class="form-label">Mes de expiración:</label>
+                  <input type="text" id="mesExpiracion" name="mesExpiracion" class="form-control">
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="anioExpiracion" class="form-label">Año de expiración:</label>
+                    <input type="text" id="anioExpiracion" name="anioExpiracion" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="cvv" class="form-label">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" class="form-control">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100" data-bs-toggle="popover" data-bs-trigger="click"
+              data-bs-placement="bottom" title="No disponible"
+              data-bs-content="Lo sentimos aun no esta disponible esta funcionalidad.">Realizar pago</button>
+
+          </form>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-3">
+            <h4 class="texto">Carrito <span class="badge bg-secondary float-end">1</span></h4>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center">Producto1</li>
+            </ul>
+            <h5 class="texto d-flex justify-content-between">Total ____</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg id="flecha-top" class="flecha-svg" viewBox="0 0 50 50" width="50" height="50">
+
+      <circle cx="25" cy="25" r="25" fill="#0ebbfe" />
+
+      <path d="M25 32 V18 M20 23 L25 18 L30 23" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"
+        stroke-linejoin="round">
+        <animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" dur="2.0s" fill="freeze"
+          repeatCount="indefinite" />
+      </path>
+    </svg>
+  </main>
+
+  <footer class="mt-auto bg-black text-white pt-4 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- Información de la empresa -->
+        <div class="col-md-3 mb-3">
+          <h5>Sobre Nosotros</h5>
+          <p>Somos una pagina de videojuegos orientada con los mejores videojuegos del mercado y al mejor
+            precio.</p>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="col-md-3 mb-3">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="juegos.html">Juegos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="proximoLanzamiento.html">Proximos lanzamientos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="reservaJuegos.html">Reserva de juegos</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="col-md-3 mb-3">
+          <h5>Contacto</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Av. Andalucia 43, Huelva</li>
+            <li><i class="bi bi-telephone-fill"></i> +34 645 34 36 63</li>
+            <li><i class="bi bi-envelope-fill"></i> GameVault@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="col-md-3 mb-3">
+          <h5>Síguenos</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.facebook.com" class="text-white">
+                <img src="img/facebook.svg" alt="Logo facebook" width="20" height="auto" class="me-2">
+              </a></li>
+            <li class="list-inline-item"><a href="https://twitter.com" class="text-white">
+                <img src="img/twitter.svg" alt="Logo twitter" width="20" height="auto" class="me-2">
+              </a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com" class="text-white">
+                <img src="img/instagram.svg" alt="Logo instagram" width="20" height="auto" class="me-2">
+              </a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com" class="text-white">
+                <img src="img/linkedin.svg" alt="Logo linkedin" width="20" height="auto" class="me-2">
+              </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="bg-light">
+
+      <!-- Derechos de autor -->
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">&copy; 2025 GameVault.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
